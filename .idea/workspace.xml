@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f19a51a4-bbf5-4e2a-a826-2311a17e44ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/decoder_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/encode_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icalendar_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component.go" beforeDir="false" afterPath="$PROJECT_DIR$/component.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/decoder.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icalendar.go" beforeDir="false" afterPath="$PROJECT_DIR$/icalendar.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icalendar_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/icalendar_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +65,7 @@
       <recent name="$PROJECT_DIR$/properties" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.decoder_test.go">
+  <component name="RunManager" selected="Go Test.icalendar_test.go">
     <configuration name="go build study.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-ical" />
       <working_directory value="$PROJECT_DIR$" />
@@ -93,8 +85,19 @@
       <filePath value="$PROJECT_DIR$/decoder_test.go" />
       <method v="2" />
     </configuration>
+    <configuration name="icalendar_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-ical" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="github.com/ScottAI/go-ical" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/icalendar_test.go" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.icalendar_test.go" />
         <item itemvalue="Go Test.decoder_test.go" />
         <item itemvalue="Go Build.go build study.go" />
       </list>
@@ -109,45 +112,45 @@
     <proxy>https://goproxy.io</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1585555625002">
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1585574764629">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1585555625002" />
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1585574764629" />
     <state width="1398" height="326" key="GridCell.Tab.0.bottom/0.23.1440.835@0.23.1440.835" timestamp="1585536739352" />
-    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1585555625002">
+    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1585574764627">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1585555625002" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1585574764627" />
     <state width="1398" height="326" key="GridCell.Tab.0.center/0.23.1440.835@0.23.1440.835" timestamp="1585536739351" />
-    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1585555625001">
+    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1585574764626">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1585555625001" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1585574764626" />
     <state width="1398" height="326" key="GridCell.Tab.0.left/0.23.1440.835@0.23.1440.835" timestamp="1585536739351" />
-    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1585555625002">
+    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1585574764628">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1585555625002" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1585574764628" />
     <state width="1398" height="326" key="GridCell.Tab.0.right/0.23.1440.835@0.23.1440.835" timestamp="1585536739351" />
-    <state width="1398" height="211" key="GridCell.Tab.1.bottom" timestamp="1585555625004">
+    <state width="1398" height="211" key="GridCell.Tab.1.bottom" timestamp="1585574764796">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.1.bottom/0.23.1440.834@0.23.1440.834" timestamp="1585555625004" />
+    <state width="1398" height="211" key="GridCell.Tab.1.bottom/0.23.1440.834@0.23.1440.834" timestamp="1585574764796" />
     <state width="1398" height="326" key="GridCell.Tab.1.bottom/0.23.1440.835@0.23.1440.835" timestamp="1585536739653" />
-    <state width="1398" height="211" key="GridCell.Tab.1.center" timestamp="1585555625003">
+    <state width="1398" height="211" key="GridCell.Tab.1.center" timestamp="1585574764795">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.1.center/0.23.1440.834@0.23.1440.834" timestamp="1585555625003" />
+    <state width="1398" height="211" key="GridCell.Tab.1.center/0.23.1440.834@0.23.1440.834" timestamp="1585574764795" />
     <state width="1398" height="326" key="GridCell.Tab.1.center/0.23.1440.835@0.23.1440.835" timestamp="1585536739653" />
-    <state width="1398" height="211" key="GridCell.Tab.1.left" timestamp="1585555625003">
+    <state width="1398" height="211" key="GridCell.Tab.1.left" timestamp="1585574764795">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.1.left/0.23.1440.834@0.23.1440.834" timestamp="1585555625003" />
+    <state width="1398" height="211" key="GridCell.Tab.1.left/0.23.1440.834@0.23.1440.834" timestamp="1585574764795" />
     <state width="1398" height="326" key="GridCell.Tab.1.left/0.23.1440.835@0.23.1440.835" timestamp="1585536739652" />
-    <state width="1398" height="211" key="GridCell.Tab.1.right" timestamp="1585555625003">
+    <state width="1398" height="211" key="GridCell.Tab.1.right" timestamp="1585574764796">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1585555625003" />
+    <state width="1398" height="211" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1585574764796" />
     <state width="1398" height="326" key="GridCell.Tab.1.right/0.23.1440.835@0.23.1440.835" timestamp="1585536739653" />
   </component>
   <component name="XDebuggerManager">
@@ -187,6 +190,11 @@
           <url>file://$PROJECT_DIR$/decoder.go</url>
           <line>79</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/icalendar_test.go</url>
+          <line>51</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

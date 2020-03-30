@@ -32,6 +32,7 @@ var exampleCalendar = NewCalendar()
 func prepareExampleCalendar() *Calendar {
 
 	event := NewEvent()
+	event.NameObj = CompEvent
 	event.SetProperty(PropDatetimeStamp,"19960704T120000Z")
 	event.SetProperty(PropUID,"uid1@example.com")
 	event.SetProperty(PropOrganizer,"mailto:jsmith@example.com")
@@ -47,7 +48,8 @@ func prepareExampleCalendar() *Calendar {
 }
 
 func TestCalendar(t *testing.T) {
-	events := exampleCalendar.GetEvents()
+	cal := prepareExampleCalendar()
+	events := cal.GetEvents()
 	if len(events) != 1 {
 		t.Fatalf("len(Calendar.Events()) = %v, want 1", len(events))
 	}
