@@ -55,7 +55,24 @@ func decodePropertyValue(p *Property,line ContentLine,n int) (*Property,error) {
 	if vpos == nil {
 		return nil,fmt.Errorf("ical:Can not decode PropertyValue:format may error")
 	}
-	p.Value = string(line[n:n+vpos[1]])
+	val := string(line[n:n+vpos[1]])
+	if val[0] == '"'{
+		val = val[1:]
+		var another rune
+		var end int
+		for i,c := range val{
+			if c == '"'{
+				another = c
+				end = i
+			}
+		}
+		if another != '"'{
+			return nil,fmt.Errorf("ical:parameter format error,only one quote string")
+		}else {
+			val = val[:end]
+		}
+	}
+	p.Value = val
 	return p,nil
 }
 
@@ -72,6 +89,8 @@ func decodePropertyParam(p *Property,line ContentLine,n int) (*Property,error,in
 	n += npos[1]
 	if rune(line[n]) != '='{
 		return nil,fmt.Errorf("ical:param format need '='"),-1
+	}else{
+		n += 1
 	}
 	paraValueReg,err :=  regexp.Compile("^(?:\"(?:[^\"\\\\]|\\[\"nrt])*\"|[^,;\\\\:\"]*)")
 	if err != nil {
@@ -104,9 +123,13 @@ func NewDecoder(r io.Reader) *Decoder {
 	return &Decoder{bufio.NewReader(r)}
 }
 
-func (dec *Decoder) Decode() (Component,error) {
+func (dec *Decoder) Decode() (Calendar,error) {
 	com,err := dec.decodeComponent()
-	return com,err
+	if err != nil {
+		return Calendar{},err
+	}
+	cal := Calendar{*com}
+	return cal,err
 }
 
 func (dec *Decoder) decodeComponent() (*ComponentObj,error) {

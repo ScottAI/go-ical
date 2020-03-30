@@ -177,6 +177,19 @@ type VEvent struct {
 	ComponentObj
 }
 
+func NewEvent() *VEvent {
+	return &VEvent{ComponentObj{}}
+}
+
+func (ev *VEvent) SetProperty(pname string,val string,pis ...ParamItem)  {
+	p := Property{Name:pname,Value:val}
+	params := Parameters{}
+	for _,pi := range pis{
+		params.SetItem(pi)
+	}
+	p.Params = params
+	ev.PropertiesObj = append(ev.PropertiesObj,p)
+}
 
 type Attendee struct {
 	ComponentObj
